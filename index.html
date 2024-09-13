@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleto Emitido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boleto Emitido com Sucesso!</h1>
+        <p>Seu boleto foi gerado e está disponível para pagamento.</p>
+        <p>Data de Emissão: <span id="date"></span></p>
+        <p>Valor: R$ <span id="amount">0,00</span></p>
+        <button onclick="window.location.href='pagina-inicial.html';">Voltar para a Página Inicial</button>
+    </div>
+    <script>
+        // Exemplo de preenchimento dinâmico de dados
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+        // Substitua o valor abaixo pelo valor real do boleto
+        document.getElementById('amount').textContent = '123,45';
+    </script>
+</body>
+</html>
