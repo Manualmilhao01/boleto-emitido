@@ -12,13 +12,11 @@
         <p>Seu boleto foi gerado e está disponível para pagamento.</p>
         <p>Data de Emissão: <span id="date"></span></p>
         <p>Valor: R$ <span id="amount">0,00</span></p>
-        <button onclick="window.location.href='pagina-inicial.html';">Voltar para a Página Inicial</button>
+       
     </div>
     <script>
-        // Exemplo de preenchimento dinâmico de dados
         document.getElementById('date').textContent = new Date().toLocaleDateString();
-        // Substitua o valor abaixo pelo valor real do boleto
-        document.getElementById('amount').textContent = '123,45';
+        document.getElementById('amount').textContent = '34,90';
     </script>
 </body>
 </html>
